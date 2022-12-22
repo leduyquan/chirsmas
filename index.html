@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>MERRY CHRISTMAS</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/icon"> 
+		<link rel="icon" href="img/favicon.ico" type="image/icon">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wow.js"></script>
+		<script type="text/javascript" src="js/snow.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<script src="js/html5.js"></script>
+			<script src="js/css3-mediaqueries.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="loading-screen">
+			<img class="loading-gif" src="img/loading.gif">
+		</div>
+		<div id="main">
+			<div class="chmball1 wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+				<img src="img/chmball1.png">
+			</div>
+			<div class="chmball2 wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.75s">
+				<img src="img/chmball2.png">
+			</div>
+			<div class="chmball3 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
+				<img src="img/chmball3.png">
+			</div>
+			<div class="chmball4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1.25s">
+				<img src="img/chmball4.png">
+			</div>
+			<div class="chmball5 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1.5s">
+				<img src="img/chmball3.png">
+			</div>
+			<div class="chmball6 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1.75s">
+				<img src="img/chmball1.png">
+			</div>
+			<div id="text">
+				<img class="verymerry wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s" src="img/verymerry.png">
+				<img class="christmas wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.5s" src="img/christmas.png">
+				<img class="hpnyear wow bounceInUp" data-wow-duration="1s" data-wow-delay="1.25s" src="img/hpnyear.png">
+				<a class="mess-open wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.75s" href="merry-christmas/index.html">CLICK VÀO ĐÂY ĐI</a>
+			</div>
+		</div>
+		<div id="mess-screen">
+			<div class="mess-box">
+				<i class="fa fa-times close-btn"></i>
+				<div class="mess-content">
+					<h2 class="mess-title">LOADING....</h2>
+					<div class="mess">
+						<!--- SỬA LỜI NHẮN TẠI ĐÂY ---->
+						<p>Chờ 1 lát nhé baby :3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio id="background_audio" loop="loop">
+			<source src="music.mp3" />
+		</audio>
+	</body>
+</html>
+<style type="text/css">
+#outerCircleText {
+font-weight: bold;
+font-family: 'times new roman';
+color: #C0C0C0;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+</style>
+<script type="text/javascript">
+;(function(){
+var msg = "Merry Christmas!";
+var size = 18;
+var circleY = 0.75; var circleX = 2;
+var letter_spacing = 5;
+var diameter = 10;
+var rotation = 0.4;
+var speed = 0.6;
+
+////////////////////// Stop Editing //////////////////////
+
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+
+mouse = function(e){
+e = e || window.event;
+ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+
+makecircle = function(){ // rotation/positioning
+if(init.nopy){
+o.style.top = (b || document.body).scrollTop + 'px';
+o.style.left = (b || document.body).scrollLeft + 'px';
+};
+currStep -= rotation;
+for (var d, i = n; i > -1; --i){ // makes the circle
+d = document.getElementById('iemsg' + i).style;
+d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+};
+},
+
+drag = function(){ // makes the resistance
+y[0] = Y[0] += (ymouse - Y[0]) * speed;
+x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+for (var i = n; i > 0; --i){
+y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+x[i] = X[i] += (x[i-1] - X[i]) * speed;
+};
+makecircle();
+},
+
+init = function(){ // appends message divs, & sets initial values for positioning arrays
+if(!isNaN(window.pageYOffset)){
+ymouse += window.pageYOffset;
+xmouse += window.pageXOffset;
+} else init.nopy = true;
+for (var d, i = n; i > -1; --i){
+d = document.createElement('div'); d.id = 'iemsg' + i;
+d.style.height = d.style.width = a + 'px';
+d.appendChild(document.createTextNode(msg[i]));
+oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+};
+o.appendChild(oi); document.body.appendChild(o);
+setInterval(drag, 25);
+},
+
+ascroll = function(){
+ymouse += window.pageYOffset;
+xmouse += window.pageXOffset;
+window.removeEventListener('scroll', ascroll, false);
+};
+
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+if (window.addEventListener){
+window.addEventListener('load', init, false);
+document.addEventListener('mouseover', mouse, false);
+document.addEventListener('mousemove', mouse, false);
+if (/Apple/.test(navigator.vendor))
+window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+window.attachEvent('onload', init);
+document.attachEvent('onmousemove', mouse);
+};
+
+})();
+
+</script>
+<noembed>

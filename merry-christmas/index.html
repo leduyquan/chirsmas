@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Meta Settings -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Title -->
+    <title>Merry Christmas ❄ Vuong Kim Huong ❄ </title>
+<SCRIPT language=Javascript>
+var txt="Merry Christmas ❄ Vuong Kim Huong ❄ Happy Birthday ❄ Vuong Kim Huong ❄"
+var espera=200;
+var refreshco=null;
+function rotulo_title(){
+document.title=txt;
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+refreshco=setTimeout("rotulo_title()",espera);
+}
+rotulo_title();
+</SCRIPT>
+<style type="text/css">
+#outerCircleText {
+font-weight: bold;
+font-family: 'times new roman';
+color: #C0C0C0;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+</style>
+
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+    <!-- Css Files -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css" media="all" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/General/favicon.ico" />
+</head>
+
+<script src="http://code.jquery.com/jquery-git2.js"></script>
+    <script>
+    $(document).ready(function(){
+        //get the content
+        var content = $('.typewrite').html();
+        //find the length of the content
+        var contentLength = content.length;
+        var char = 0;
+        $('.typewrite').html('<span class="typing-cursor">|</span>');
+        //Here is the function
+        (function typeFunc() { 
+         //dynamic delay to get the typewriting feel
+            var typingSpeed = Math.round(Math.random() * 200) + 0;
+            setTimeout(function() {
+                char++;
+                var type = content.substring(0, char);
+                $('.typewrite').html(type + '<span class="typing-cursor">|</span>');
+                if (char == contentLength) char = 0;
+                //recursive
+                typeFunc();
+            }, typingSpeed);
+        }());
+    });
+    </script>
+<body onload="loading();">
+    <!-- Loading -->
+    <div id="loading">
+        <div class="spinner">
+        </div>
+    </div>
+    <div class="mainWrap">
+        <!-- Music Player -->
+        <div id="player" style="display: none;">
+        </div>
+<object width="0" height="0"><param name="movie" value="http://mp3.zing.vn/embed/song/IWBO6EUA?start=true" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="allowfullscreen" value="true"/><param name="allowscriptaccess" value="always"/><embed allowscriptaccess="always" allowfullscreen="true" width="0" height="0" src="http://mp3.zing.vn/embed/song/IWBO6EUA?start=true" quality="high" wmode="transparent"></embed></object>
+
+        <a class="musicPlayer" href="javascript:;">MUSIC</a>
+        <!-- Big Screen - Deer -->
+        <div class="bigScreenWrap">
+	 <img src="assets/images/Tree/bell.png" alt="Tree-Bell" />
+            <span class="title">woow!</span> <span>Big Screen</span>
+        </div>
+        <!-- Snow Effect -->
+        <div class="snowEffect">
+        </div>
+        <!-- Topmost Ices -->
+        <div class="iceWrap">
+        </div>
+        <img src="assets/images/General/moon.png" alt="moon" class="moon" />
+        <!-- Counter Table -->
+        <div class="counterTable">
+            <span class="title">Merry Christmas 2023</span>
+            <div id="cntdwn">
+            </div>
+             <a href="" target="_self">♥  Vuong Kim Huong  ♥</a>
+        </div>
+        <!-- Twitter -->
+        <div class="twitterWrap">
+            <div class="twitterBird bird1">
+            </div>
+            <div class="twitArea">
+                <span class="twitterUserName">By: HoangLe</span>
+		<div>♥  Trên cây thông có 3 hộp quà, baby click vào từng hộp để nhận điều thú vị nhé :v <br><br>♥  Chúc baby một giáng sinh và sinh nhật vui vẻ, ấm áp!</div>
+                <div id="twits" class="twits">
+                </div>
+            </div>
+        </div>
+        <!-- Tree -->
+        <div class="treeWrap demo-2">
+            <div class="tree">
+            </div>
+            <div class="pattern">
+            </div>
+            <!-- About Us -->
+            <div class="pfolds bell">
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="assets/images/Tree/bell.png" alt="Tree-Bell" />
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="assets/images/Tree/hat.png" alt="Bells-Hat" />
+                        <h3>
+                            About Po</h3>
+                        <div class="fContent text">
+                            
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Map -->
+            <div class="pfolds starRed">
+                <div class="uc-container map">
+                    <div class="uc-initial-content">
+                        <img src="assets/images/Tree/star-red.png" alt="Tree-Star-Red" />
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="assets/images/Tree/hat.png" alt="Bells-Hat" />
+                        <h3>
+                            ❄ Thiệp Noel ^^ ❄ </h3>
+                        <div class="fContent">
+                            <div><div class="typewrite">
+Noel lòng thấy lao đao. Gấu nơi xa tít, làm sao bây giờ ? Đời anh phẳng lặng như tờ. Làm sao để tránh ở nhà chơi game? Cứ như năm ngoái thanh cao, Không gấu, không chó, mày tao bạn bè.
+Noel đi nhậu bét nhè, Đứng dậy thanh toán chia phe trả tiền, Ngờ đâu gặp được bạn hiền, Nó đòi trả hết, anh liền ô kê. Bây giờ nghĩ lại vẫn phê, Còn đâu ngày tháng đê mê bạn bè.
+Năm nay tụi bạn có kèo, Nhưng vì có gấu anh đành chia phai. Ngoài mặt anh cứ cười tươi, Trong lòng đã nghĩ ngồi nhà đánh game. Hôm nay hai bốn xô bồ, đơn thân độc mã buồn như đi tù.
+Gấu vẫn bận thi lu bù, Lòng đành phải cố hẹn nàng mai sau. Tình hình là rất tình hình, Mong sao nhanh Tết, em về với anh ? Anh thì thơ dốt chả hay, Thôi đành tạm viết xả ra nỗi lòng.<br /> <center><h3> ❤ Merry Christmas Baby.............</h3></center>
+
+</div>
+			   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="pfolds starGold">
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="assets/images/Tree/star-gold.png" alt="Tree-Star-Gold" />
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="assets/images/Tree/hat.png" alt="Bells-Hat" />
+                        <br /><br /><br/><h3>
+                            Anh có một trò chơi rất thú vị giành cho em</h3>
+                        <h3> <a href="game/index.html">Click vào đây nhé </a></h3><br /><center>P/s: just for fun :)</center>
+                           
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Iframe Youtube Video -->
+            <div class="pfolds ball">
+                <div class="uc-container video">
+                    <div class="uc-initial-content">
+                        <img src="assets/images/Tree/ball.png" alt="Tree-Ball" />
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="assets/images/Tree/hat.png" alt="Bells-Hat" />
+                       <object width="640" height="390">
+  <param name="movie"
+         value="https://www.youtube.com/v/rpFvhdEPuEU?controls=0&amp;showinfo=0&amp;version=3&autoplay=1"></param>
+  <param name="allowScriptAccess" value="always"></param>
+  <embed src="https://www.youtube.com/v/rpFvhdEPuEU?controls=0&amp;showinfo=0&amp;version=3&autoplay=1"
+         type="application/x-shockwave-flash"
+         allowscriptaccess="always"
+         width="640" height="360"></embed>
+</object>
+
+                        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="yourMessageWrap">
+                <span class="message">♥ Love you Baby ♥</span>
+                <img src="assets/images/General/logo.png" alt="logo" />
+            </div>
+           
+              
+        </div>
+        <!-- North Pole Point -->
+        <div class="northPole">
+        </div>
+    </div>
+    <!-- Script Files -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.validate.pack.js"></script>
+    <script type="text/javascript" src="assets/scripts/modernizr.custom.79639.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.pfold.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.arctext.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.classywiggle.js"></script>
+    <script type="text/javascript" src="assets/scripts/ThreeCanvas.js"></script>
+    <script type="text/javascript" src="assets/scripts/Snow.js"></script>
+    <script type="text/javascript" src="assets/scripts/twitterFetcher_v10_min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="assets/scripts/ttw-music-player.js"></script>
+    <script type="text/javascript" src="assets/scripts/myplaylist.js"></script>
+    <script type="text/javascript" src="assets/scripts/custom.js"></script>
+    <!-- Inline Scripts -->
+    <script type="text/javascript">
+        // <![CDATA[
+        /* Counter For New Year Settings - Start */
+        TargetDate = "12/25/2015 0:00 AM";
+        BackColor = "transparent";
+        ForeColor = "navy";
+        CountActive = true;
+        CountStepper = -1;
+        LeadingZero = true;
+        DisplayFormat = '<span class="day">%%D%% Days</span> <span class="time">%%H%%:%%M%%:%%S%%</span>';
+        FinishMessage = "<span>Chúc em và gia đình</span> <span> Giáng Sinh Vui Vẻ</span>";
+        /* Counter For New Year Settings - End */
+
+        /*Snow Effect - Start*/
+        /* Variables - Start */
+        var SCREEN_WIDTH = window.innerWidth;
+        var SCREEN_HEIGHT = window.innerHeight;
+        var container;
+        var particle;
+        var camera;
+        var scene;
+        var renderer;
+        var mouseX = 0;
+        var mouseY = 0;
+        var windowHalfX = window.innerWidth / 2;
+        var windowHalfY = window.innerHeight / 2;
+        var particles = [];
+        var particleImage = new Image();
+        particleImage.src = 'assets/images/General/snow.png';
+        /* Variables - End */
+
+        function snowEffectBind() {
+            container = $('.snowEffect');
+
+            camera = new THREE.PerspectiveCamera(75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
+            camera.position.z = 1000;
+
+            scene = new THREE.Scene();
+            scene.add(camera);
+
+            renderer = new THREE.CanvasRenderer();
+            renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+            var material = new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImage) });
+
+            for (var i = 0; i < 500; i++) {
+                particle = new Particle3D(material);
+                particle.position.x = Math.random() * 2000 - 1000;
+                particle.position.y = Math.random() * 2000 - 1000;
+                particle.position.z = Math.random() * 2000 - 1000;
+                particle.scale.x = particle.scale.y = 1;
+                scene.add(particle);
+
+                particles.push(particle);
+            }
+
+            container.html(renderer.domElement);
+
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+            document.addEventListener('touchstart', onDocumentTouchStart, false);
+            document.addEventListener('touchmove', onDocumentTouchMove, false);
+
+            setInterval(loop, 1000 / 60);
+        }
+
+        function onDocumentMouseMove(event) {
+            mouseX = event.clientX - windowHalfX;
+            mouseY = event.clientY - windowHalfY;
+        }
+
+        function onDocumentTouchStart(event) {
+            if (event.touches.length == 1) {
+                event.preventDefault();
+
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+            }
+        }
+
+        function onDocumentTouchMove(event) {
+            if (event.touches.length == 1) {
+                event.preventDefault();
+
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+            }
+        }
+
+        function loop() {
+            for (var i = 0; i < particles.length; i++) {
+                var particle = particles[i];
+                particle.updatePhysics();
+
+                with (particle.position) {
+                    if (y < -1000) y += 2000;
+                    if (x > 1000) x -= 2000;
+                    else if (x < -1000) x += 2000;
+                    if (z > 1000) z -= 2000;
+                    else if (z < -1000) z += 2000;
+                }
+            }
+
+            camera.position.x += (mouseX - camera.position.x) * 0.05;
+            camera.position.y += (-mouseY - camera.position.y) * 0.05;
+            camera.lookAt(scene.position);
+
+            renderer.render(scene, camera);
+        }
+        /*Snow Effect - End*/
+        // ]]>
+    </script><script type="text/javascript" src="assets/scripts/countDown.js"></script>
+   </body>
+</html>
+
+<noembed>

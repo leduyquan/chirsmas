@@ -1,0 +1,32 @@
+@media (min-width: 770px) and (max-width: 1025px) 
+{
+.northPole { left:auto; right:0px; }
+
+.twitterWrap, a.musicPlayer { left:10px; }
+
+.counterTable { right:10px; }
+}
+
+@media (min-width: 481px) and (max-width: 770px) 
+{    
+.northPole { left:auto; right:-60px; }
+
+.twitterWrap, a.musicPlayer { left:10px; }
+
+.counterTable { left:50%; right:auto; margin-left:-127px; }
+
+img.moon { display:none; }
+
+.emailSender { left:50%; margin-left:-170px; }
+}
+
+@media (max-width: 480px) 
+{
+.northPole, img.moon, a.musicPlayer, .treeWrap a.mail, .twitterWrap, .uc-container { display:none; }
+
+.counterTable { left:50%; right:auto; margin-left:-127px; }
+
+.mainWrap { min-height:950px; }
+
+.copyright { font-size:10px; font-weight:400; }
+}
